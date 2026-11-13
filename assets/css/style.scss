@@ -1,10 +1,22 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap');
+
+/* Paleta "terminal": sidebar y cabecera oscuras, acento cian, como una sesión de sistema */
+$header-bg-color: #0f172a;
+$header-bg-color-secondary: #164e63;
+$section-headings-color: #0369a1;
+$body-link-color: #0369a1;
+
 @import "jekyll-theme-cayman";
 
+h1, h2, h3, .project-name {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+
 /* ─────────────────────────────────────────
-   Sidebar — fijo, altura completa
+   Sidebar — fijo, altura completa, modo terminal
 ───────────────────────────────────────── */
 .sidebar {
   position: fixed;
@@ -14,9 +26,10 @@
   height: 100vh;
   z-index: 100;
   overflow-y: auto;
-  background: #f8fafb;
-  border-right: 1px solid #e4e8ec;
-  font-size: 0.82rem;
+  background: #0f172a;
+  border-right: 1px solid #1e293b;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.78rem;
   transition: transform 0.28s ease;
 
   &.is-collapsed {
@@ -35,20 +48,20 @@
     a {
       display: block;
       padding: 0.3rem 0.5rem;
-      color: #555;
+      color: #94a3b8;
       text-decoration: none;
       line-height: 1.4;
       border-radius: 4px;
 
       &:hover {
-        background: #e8f5e9;
-        color: #159957;
+        background: #1e293b;
+        color: #22d3ee;
       }
     }
 
     &.active > a {
-      background: #d4edda;
-      color: #155724;
+      background: #164e63;
+      color: #67e8f9;
       font-weight: 700;
     }
   }
@@ -60,18 +73,18 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.65rem 0.5rem 0.65rem 1.25rem;
-  border-bottom: 1px solid #e4e8ec;
-  background: #f1f3f4;
+  border-bottom: 1px solid #1e293b;
+  background: #111827;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
 .sidebar-home {
-  color: #159957;
+  color: #22d3ee;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
 
   &:hover { text-decoration: underline; }
 }
@@ -84,9 +97,9 @@
   width: 1.6rem;
   height: 1.6rem;
   background: none;
-  border: 1px solid #ddd;
+  border: 1px solid #334155;
   border-radius: 4px;
-  color: #888;
+  color: #64748b;
   cursor: pointer;
   font-size: 1rem;
   line-height: 1;
@@ -94,9 +107,9 @@
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 
   &:hover {
-    background: #e8f5e9;
-    color: #159957;
-    border-color: #159957;
+    background: #1e293b;
+    color: #22d3ee;
+    border-color: #22d3ee;
   }
 }
 
@@ -111,19 +124,19 @@
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: #0f172a;
+  border: 1px solid #334155;
   border-radius: 5px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   font-size: 1rem;
-  color: #444;
+  color: #94a3b8;
   transition: background 0.15s, border-color 0.15s;
 
   &:hover {
-    background: #e8f5e9;
-    border-color: #159957;
-    color: #159957;
+    background: #1e293b;
+    border-color: #22d3ee;
+    color: #22d3ee;
   }
 }
 
@@ -158,11 +171,11 @@
 }
 
 /* ─────────────────────────────────────────
-   Soluciones plegables
+   Soluciones plegables — estilo "salida de terminal"
 ───────────────────────────────────────── */
 details {
   margin: 2em 0;
-  border: 1px solid #b2dfdb;
+  border: 1px solid #bbf7d0;
   border-radius: 8px;
   overflow: hidden;
   background: #fff;
@@ -172,8 +185,8 @@ details {
 details summary {
   display: block;
   padding: 0.75em 1.1em;
-  background: linear-gradient(135deg, #e0f2f1, #f1f8e9);
-  color: #00695c;
+  background: linear-gradient(135deg, #ecfdf5, #eafbfa);
+  color: #065f46;
   font-weight: 700;
   font-size: 0.88rem;
   letter-spacing: 0.05em;
@@ -193,13 +206,13 @@ details summary::before {
   font-size: 0.65em;
   margin-right: 0.55em;
   vertical-align: middle;
-  color: #26a69a;
+  color: #16a34a;
   transition: transform 0.2s ease;
 }
 
 details[open] > summary {
-  border-bottom-color: #b2dfdb;
-  background: linear-gradient(135deg, #d0efec, #e8f5e9);
+  border-bottom-color: #bbf7d0;
+  background: linear-gradient(135deg, #d1fae5, #ecfdf5);
 }
 
 details[open] > summary::before { transform: rotate(90deg); }
@@ -238,9 +251,9 @@ details code { font-size: 0.88em; }
 .nav-btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  border: 2px solid #159957;
+  border: 2px solid #0369a1;
   border-radius: 6px;
-  color: #159957;
+  color: #0369a1;
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 700;
@@ -248,7 +261,7 @@ details code { font-size: 0.88em; }
   white-space: nowrap;
 
   &:hover {
-    background: #159957;
+    background: #0369a1;
     color: #fff;
     text-decoration: none;
   }
@@ -268,7 +281,7 @@ details code { font-size: 0.88em; }
   text-align: center;
 
   a { color: #bbb; text-decoration: none; }
-  a:hover { color: #159957; }
+  a:hover { color: #0369a1; }
 }
 
 /* ─────────────────────────────────────────
@@ -278,7 +291,7 @@ details code { font-size: 0.88em; }
   .sidebar {
     transform: translateX(-240px); /* oculto por defecto */
     z-index: 300;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.35);
 
     &.is-open {
       transform: translateX(0);
