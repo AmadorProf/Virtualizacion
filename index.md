@@ -17,11 +17,13 @@ El libro es gratuito en [ostep.org](https://ostep.org) (versión 1.10). Léelo c
 ## Índice de módulos
 
 ### Parte 0 — Introducción
+
 | Módulo | Capítulo OSTEP |
 |---|---|
 | [02 — Introducción](Virtualizacion_Apuntes_02-introduccion) | 2. Introduction to Operating Systems |
 
 ### Parte I — Virtualización · CPU
+
 | Módulo | Capítulo OSTEP |
 |---|---|
 | [04 — El proceso](Virtualizacion_Apuntes_04-procesos) | 4. The Abstraction: The Process |
@@ -33,6 +35,7 @@ El libro es gratuito en [ostep.org](https://ostep.org) (versión 1.10). Léelo c
 | [10 — Planificación multiprocesador](Virtualizacion_Apuntes_10-planificacion-multiprocesador) | 10. Multiprocessor Scheduling |
 
 ### Parte I — Virtualización · Memoria
+
 | Módulo | Capítulo OSTEP |
 |---|---|
 | [13 — Espacios de direcciones](Virtualizacion_Apuntes_13-espacios-de-direcciones) | 13. The Abstraction: Address Spaces |
@@ -48,6 +51,7 @@ El libro es gratuito en [ostep.org](https://ostep.org) (versión 1.10). Léelo c
 | [23 — Sistemas de VM completos](Virtualizacion_Apuntes_23-sistemas-vm-completos) | 23. Complete Virtual Memory Systems |
 
 ### Parte II — Concurrencia
+
 | Módulo | Capítulo OSTEP |
 |---|---|
 | [26 — Concurrencia: introducción](Virtualizacion_Apuntes_26-concurrencia-introduccion) | 26. Concurrency: An Introduction |
@@ -60,6 +64,7 @@ El libro es gratuito en [ostep.org](https://ostep.org) (versión 1.10). Léelo c
 | [33 — Concurrencia por eventos](Virtualizacion_Apuntes_33-concurrencia-por-eventos) | 33. Event-based Concurrency |
 
 ### Parte III — Persistencia
+
 | Módulo | Capítulo OSTEP |
 |---|---|
 | [36 — Dispositivos de E/S](Virtualizacion_Apuntes_36-dispositivos-es) | 36. I/O Devices |
@@ -74,6 +79,7 @@ El libro es gratuito en [ostep.org](https://ostep.org) (versión 1.10). Léelo c
 | [45 — Integridad de datos](Virtualizacion_Apuntes_45-integridad-de-datos) | 45. Data Integrity and Protection |
 
 ### Parte IV — Distribución
+
 | Módulo | Capítulo OSTEP |
 |---|---|
 | [48 — Sistemas distribuidos](Virtualizacion_Apuntes_48-sistemas-distribuidos) | 48. Distributed Systems |
@@ -81,6 +87,7 @@ El libro es gratuito en [ostep.org](https://ostep.org) (versión 1.10). Léelo c
 | [50 — AFS](Virtualizacion_Apuntes_50-afs) | 50. The Andrew File System (AFS) |
 
 ### Apéndices
+
 | Módulo | Apéndice OSTEP |
 |---|---|
 | [Apéndice B — Monitores de máquinas virtuales](Virtualizacion_Apuntes_ap-vmm) | B. Virtual Machine Monitors |
