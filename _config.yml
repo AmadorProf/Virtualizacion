@@ -1,0 +1,8 @@
+title: Virtualización y sistemas operativos
+description: Apuntes de OSTEP en español — procesos, memoria, concurrencia, almacenamiento y sistemas distribuidos
+theme: jekyll-theme-cayman
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
